@@ -99,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #935d8c;
+		background-color: #2d5890;
 		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #2d5890, #315186, #334a7c, #334372, #333d68, #2e3961, #293459, #243052, #1b2c4b, #122845, #08233e, #001f37);
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #2d5890, #315186, #334a7c, #334372, #333d68, #2e3961, #293459, #243052, #1b2c4b, #122845, #08233e, #001f37);
 		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #2d5890, #315186, #334a7c, #334372, #333d68, #2e3961, #293459, #243052, #1b2c4b, #122845, #08233e, #001f37);

@@ -2720,7 +2720,11 @@ input, select, textarea {
 		table tbody tr {
 			border: solid 1px;
 			border-left: 0;
-			border-right: 0;
+			border-right: 0;		}
+
+		table tr {
+		   display: grid;
+		   grid-template-columns: repeat(1, 20% 1fr 1fr);
 		}
 
 		table td {
@@ -2733,6 +2737,29 @@ input, select, textarea {
 			padding: 0 0.75em 0.75em 0.75em;
 			text-align: left;
 		}
+
+		table .expanded-row-content {
+	      border-top: none;
+	      display: grid;
+	      grid-column: 1/-1;
+	      justify-content: flex-start;
+	      color: #AEB1B3;
+	      font-size: 0.9em;
+	      background-color: #fff;
+	    }
+
+	    table .hide-row {
+	      display: none;
+	    }
+
+	    table tr:first-child:hover {
+	      cursor: default;
+	      background-color: #fff;
+	    }
+
+	    table tr:hover {
+	      background-color: #EEF4FD;
+	    }
 
 		table thead {
 			border-bottom: solid 2px;

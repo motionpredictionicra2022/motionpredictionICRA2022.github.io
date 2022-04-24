@@ -168,15 +168,17 @@
 									<td>Organizers</td>
 									<td>Welcome and Introduction</td>
 								</tr>
-								<tr>
+								<tr onClick='toggleRow(this)'>
 									<td>8:45 - 9:15 am EDT </br> 14:45 - 15:15 CEST</td>
 									<td><strong><a href="http://www.iri.upc.edu/people/sanfeliu/">Alberto Sanfeliu</a></strong>, Universitat Politècnica de Catalunya</td>
 									<td>tbd</td>
+									<td class='expanded-row-content hide-row'>Abstract: tbd</td>
 								</tr>
-								<tr>
+								<tr onClick='toggleRow(this)'>
 									<td>9:15 - 9:45 am EDT </br> 15:15 - 15:45 CEST</td>
 									<td><strong><a href="http://people.rennes.inria.fr/Julien.Pettre/">Julien Pettré</a></strong>, INRIA</td>
 									<td>tbd</td>
+									<td class='expanded-row-content hide-row'>Abstract: tbd</td>
 								</tr>
 								<tr>
 									<td>9:45 - 10:15 am EDT </br> 15:45 - 16:15 CEST</td>
@@ -188,46 +190,51 @@
 									<td>Coffee break</td>
 									<td></td>
 								</tr>
-								<tr>
+								<tr onClick='toggleRow(this)'>
 									<td>11:00 - 11:30 am EDT </br> 17:00 - 17:30 CEST</td>
 									<td><strong><a href="https://cos.northeastern.edu/people/dagmar-sternad/">Dagmar Sternad</a></strong>, Northeastern University</td>
 									<td>tbd</td>
+									<td class='expanded-row-content hide-row'>Abstract: tbd</td>
 								</tr>
-								<tr>
+								<tr onClick='toggleRow(this)'>
 									<td>11:30 - 12:00 am EDT </br> 17:30 - 18:00 CEST</td>
-									<!-- <td><strong><a href="https://www.ed.ac.uk/profile/dr-anne-templeton">Anne Templeton</a></strong>, University of Edinburgh</td> -->
+									<td><strong><a href="http://wpage.unina.it/silrossi/index.html">Silvia Rossi</a></strong>, University of Naples</td>
 									<td>tbd</td>
-									<td>tbd</td>
+									<td class='expanded-row-content hide-row'>Abstract: tbd</td>
 								</tr>
-								<tr>
+								<tr onClick='toggleRow(this)'>
 									<td>12:00 - 12:30 pm EDT </br> 18:00 - 18:30 CEST</td>
 									<td><strong><a href="https://web.mit.edu/krallen/www/">Kelsey Allen</a></strong>, DeepMind</td>
 									<td>tbd</td>
+									<td class='expanded-row-content hide-row'>Abstract: tbd</td>
 								</tr>
 								<tr>
 									<td>12:30 - 1:45 pm EDT </br> 18:30 - 19:45 CEST</td>
 									<td>Lunch break</td>
 									<td></td>
 								</tr>
-								<tr>
+								<tr onClick='toggleRow(this)'>
 									<td>1:45 - 2:15 pm EDT </br> 19:45 - 20:15 CEST</td>
 									<td><strong><a href="https://ece.illinois.edu/about/directory/faculty/krdc">Katherine Driggs-Campbel</a></strong>, University  of  Illinois</td>
 									<td>tbd</td>
+									<td class='expanded-row-content hide-row'>Abstract: tbd</td>
 								</tr>
-								<tr>
+								<tr onClick='toggleRow(this)'>
 									<td>2:15 - 3:15 pm EDT </br> 20:15 - 21:15 CEST</td>
 									<td><strong><a href="https://www.borisivanovic.com">Boris Ivanovic</a></strong>, Stanford</td>
 									<td>tbd</td>
+									<td class='expanded-row-content hide-row'>Abstract: tbd</td>
 								</tr>
 								<tr>
 									<td>3:15 - 4:00 pm EDT </br> 21:15 - 22:00 CEST</td>
 									<td>Coffee break</td>
 									<td></td>
 								</tr>
-								<tr>
+								<tr onClick='toggleRow(this)'>
 									<td>4:00 - 4:30 pm EDT </br> 22:00 - 22:30 CEST</td>
 									<td><strong><a href="https://www.sanjibanchoudhury.com/">Sanjiban Choudhury</a></strong>, Aurora</td>
 									<td>tbd</td>
+									<td class='expanded-row-content hide-row'>Abstract: tbd</td>
 								</tr>
 								<tr>
 									<td>4:30 - 5:00 pm EDT </br> 22:30 - 23:00 CEST</td>
@@ -396,6 +403,13 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+		<script>
+		    const toggleRow = (element) => {
+		      element.getElementsByClassName('expanded-row-content')[0].classList.toggle('hide-row');
+		      console.log(event);
+		    }
+		  </script>
 
 	</body>
 </html>
